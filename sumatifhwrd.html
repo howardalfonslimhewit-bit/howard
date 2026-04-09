@@ -1,0 +1,59 @@
+<html>
+<head>
+    <title>Form</title>
+    <link rel="stylesheet" href="sumatifhwrd.css">
+</head>
+<body>
+
+<script>
+    alert("HELLO TEMAN KU TERBAIK!!");
+</script>
+
+<div class="kotak" id="form">
+    <h3>Form Pendaftaran siswa</h3>
+
+    Nama <br>
+    <input type="text" id="nama"> <br>
+
+    Kelas <br>
+    <input type="text" id="kelas"> <br>
+
+    Umur <br>
+    <input type="radio" name="umur" value="10-12"> 10-12 <br>
+    <input type="radio" name="umur" value="12-15"> 12-15 <br>
+    <input type="radio" name="umur" value="16-17"> 16-17 <br>
+
+    Jenis Kelamin <br>
+    <input type="radio" name="jk" value="laki-laki"> laki-laki <br>
+    <input type="radio" name="jk" value="perempuan"> perempuan <br>
+
+    Tingkatan <br>
+    <select id="tingkat">
+        <option>SD</option>
+        <option>SMP</option>
+        <option>SMA</option>
+    </select>
+
+    <br><br>
+
+    <button onclick="kirim()">OK</button>
+    <button onclick="clearData()">CLEAR</button>
+</div>
+
+<div class="kotak" id="hasil" style="display:none;">
+    <h3>hasil</h3>
+
+    nama: <span id="hNama"></span> <br><br>
+    kelas: <span id="hKelas"></span> <br><br>
+    umur: <span id="hUmur"></span> <br><br>
+    jk: <span id="hJk"></span> <br><br>
+    tingkat: <span id="hTingkat"></span>
+
+    <br><br>
+    <button onclick="kembali()">kembali</button>
+</div>
+
+<script src="sumatifhwrd.js"></script>
+
+</body>
+</html>
